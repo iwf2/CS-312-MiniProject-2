@@ -7,9 +7,15 @@
 <body>
   <div class="container">
     <h1>Hello <%= name %>! Here's your joke:</h1>
-    <% if (jokeData.type === 'single') { %>
+
+    <!--1 part joke-->
+    <% if (jokeData.type === 'single') 
+       { %>
       <p><%= jokeData.joke %></p>
-    <% } else { %>
+    <% } 
+
+    //two part joke
+    else { %>
       <p><%= jokeData.setup %></p>
       <p><strong><%= jokeData.delivery %></strong></p>
     <% } %>
