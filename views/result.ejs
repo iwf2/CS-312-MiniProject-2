@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Joke</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hello <%= name %>! Here's your joke:</h1>
+    <% if (jokeData.type === 'single') { %>
+      <p><%= jokeData.joke %></p>
+    <% } else { %>
+      <p><%= jokeData.setup %></p>
+      <p><strong><%= jokeData.delivery %></strong></p>
+    <% } %>
+    <a href="/"><button>Try another!</button></a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get a Joke!</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Find a Joke Just for You</h1>
+    <form action="/joke" method="POST">
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <select name="category" required>
+        <option value="Programming">Programming</option>
+        <option value="Misc">Misc</option>
+        <option value="Christmas">Christmas</option>
+        <option value="Pun">Pun</option>
+      </select>
+      <button type="submit">Get Joke</button>
+    </form>
+  </div>
+</body>
+</html>
